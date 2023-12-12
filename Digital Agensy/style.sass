@@ -1,0 +1,209 @@
+// @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+
+@font-face
+    font-family: "Montserrat"
+    src : url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap')
+
+h1
+    font-family: 'Poppins', sans-serif
+
+p
+    font-family: 'Plus Jakarta Sans', sans-serif
+
+
+.header
+    width: 100%
+    height: 1104px
+    background: #111111
+    
+
+.nav-bar
+    height: min(100%, 100px)
+    width: min(100%, 1399px)
+    margin-inline: auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 40px
+    padding-bottom: 40px
+
+.cont-1
+    margin-inline: auto
+        width: min(100%, 1440px)
+
+.buttons
+    width: min(100%, 818px)
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    p
+        color: #fff
+        margin: 0%
+        font-family: 'Poppins', sans-serif
+        font-size: 20px
+        cursor: pointer
+        display: flex
+        align-items: center
+        margin-right: 20px
+
+    svg
+        margin-left: 10px
+
+    img
+        margin-left: 10px
+
+
+
+
+
+    
+
+.int-but
+    width: min(100%, 200px)
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.burger-menu
+    cursor: pointer
+    background: rgba(255, 255, 255, 0.15)
+    width: 45px
+    height: 45px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+
+    &:hover
+        opacity: 1
+
+
+.cart-svg
+    height: 35px
+
+
+
+
+.main-cont
+
+    width: min(100%, 1399px)
+    margin-inline: auto
+    display: flex
+
+    h1
+        width: min(100%, 400px)
+        color: white
+        font-size: 130px
+        font-style: normal
+        font-weight: 500
+        line-height: 135%
+        margin-bottom: 20px
+    
+    p
+        color: white
+        font-size: 20px
+        font-style: normal
+        font-weight: 500
+        line-height: 140%
+        width: min(100%, 430px)
+        margin: 0%
+
+    .scrol-p
+        font-size: 14px
+        font-style: normal
+        font-weight: 600
+        line-height: 140%
+        letter-spacing: 3.5px
+        display: flex
+        align-items: center
+        transform: rotate(-90deg)
+        position: relative
+        right:20px
+        bottom: 70px
+
+    .arr-img
+        height: 20px
+
+    .play-button
+        position: absolute
+        margin-top: 240px
+        margin-left: 640px
+        width: 158px
+        height: 158px
+        background-color: #E3B27D
+        border-radius:50%
+        display: flex
+        justify-content: center
+        align-items: center
+
+
+    .play-button-insCircl
+        width: 100px
+        height: 100px
+        border: 1px solid white
+        border-radius: 50%
+                
+
+
+
+    .head-bg
+        background: #222222
+        width: 670px
+        height: 750px
+    
+        .pupls-image
+            width: 220px
+            
+    
+        .pupls-text
+            margin-left: 20px
+    
+        .pupls
+            display: flex
+            align-items: center
+            margin-left: 30px
+            margin-top: 10px
+    
+        h1
+            font-size: 20px
+            font-style: normal
+            font-weight: 700
+            line-height: 140%
+            margin: 0%
+    
+        p
+            font-size: 16px
+            font-style: normal
+            font-weight: 500
+            line-height: 140%
+            margin: 0%
+
+
+
+.carti
+    position: relative
+
+    &__carta
+        position: absolute
+        width: 400px
+        height: 600px
+        border: 2px solid black
+        top: 0
+        left: 0
+        transition: 2s
+        backface-visibility: hidden
+        &_inside
+            background-color: red
+        &_outside
+            background-color: blue
+            transform: rotateY(180deg)
+    &:hover &__carta_inside
+        transform: rotateY(180deg)
+    &:hover &__carta_outside
+        transform: rotateY(0deg)
+    
+            
+
+
+
