@@ -1,0 +1,27 @@
+.carti {
+    position: relative;
+    perspective: 150rem;
+  }
+  .carti__carta {
+    position: absolute;
+    width: 400px;
+    height: 600px;
+    border: 2px solid black;
+    top: 0;
+    left: 0;
+    transition: 2s;
+    backface-visibility: hidden;
+  }
+  .carti__carta_inside {
+    background-color: red;
+  }
+  .carti__carta_outside {
+    background-color: blue;
+    transform: rotateY(180deg);
+  }
+  .carti:hover .carti__carta_inside {
+    transform: rotateY(-180deg);
+  }
+  .carti:hover .carti__carta_outside {
+    transform: rotateY(0deg);
+  }/*# sourceMappingURL=style.css.map */

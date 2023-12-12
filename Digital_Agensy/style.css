@@ -29,7 +29,7 @@ p {
 
 .cont-1 {
   margin-inline: auto;
-  margin-inline-width: min(100%, 1440px);
+  width: min(100%, 1440px);
 }
 
 .buttons {
@@ -171,6 +171,8 @@ p {
 
 .carti {
   position: relative;
+  perspective: 150rem;
+
 }
 .carti__carta {
   position: absolute;
@@ -190,7 +192,7 @@ p {
   transform: rotateY(180deg);
 }
 .carti:hover .carti__carta_inside {
-  transform: rotateY(180deg);
+  transform: rotateY(-180deg);
 }
 .carti:hover .carti__carta_outside {
   transform: rotateY(0deg);
