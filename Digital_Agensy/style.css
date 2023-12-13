@@ -1,7 +1,20 @@
-@font-face {
-  font-family: "Montserrat";
-  src: url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap");
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #161515;
 }
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  background-color: #202020;
+  border-radius: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 h1 {
   font-family: "Poppins", sans-serif;
 }
@@ -80,6 +93,18 @@ p {
   height: 35px;
 }
 
+.img-fon {
+  width: 70px;
+  position: absolute;
+}
+
+.img-fon-arahis {
+  width: 80px;
+  position: absolute;
+  margin-left: 329px;
+  margin-top: 725px;
+}
+
 .main-cont {
   width: min(100%, 1399px);
   margin-inline: auto;
@@ -88,9 +113,9 @@ p {
 .main-cont h1 {
   width: min(100%, 400px);
   color: white;
-  font-size: 130px;
+  font-size: 100px;
   font-style: normal;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 135%;
   margin-bottom: 20px;
 }
@@ -141,6 +166,7 @@ p {
   background: #222222;
   width: 670px;
   height: 750px;
+  display: flex;
 }
 .main-cont .head-bg .pupls-image {
   width: 220px;
@@ -168,32 +194,190 @@ p {
   line-height: 140%;
   margin: 0%;
 }
-
-.carti {
-  position: relative;
-  perspective: 150rem;
-
+.main-cont .head-bg .fun-fact {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-inline: auto;
+  height: min(100%, 650px);
+  text-align: left;
 }
-.carti__carta {
+.main-cont .head-bg .fun-fact h1 {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 220%;
+  margin: 0px;
+  height: 87px;
+}
+.main-cont .head-bg .fun-fact p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 220%;
+  margin: 0px;
+}
+
+.partners {
+  margin-top: 100px;
+  display: flex;
+  margin-inline: auto;
+  justify-content: space-between;
+  width: min(100%, 1270px);
+}
+
+.about-us {
+  margin: 0px;
+  background: #181818;
+  height: 990px;
+}
+.about-us .cont-2 {
+  width: min(100%, 1440px);
+  height: min(100%, 804px);
+  margin-inline: auto;
+  padding-top: 94px;
+}
+.about-us .cont-2 .secation-title {
+  color: white;
+}
+.about-us .cont-2 .secation-title p {
+  color: #888;
+  margin: 0px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 160%;
+  letter-spacing: 2.1px;
+}
+.about-us .cont-2 .secation-title h1 {
+  margin: 0px;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 135%;
+  width: min(100%, 798px);
+}
+.about-us .cont-2 img {
+  width: 700px;
+}
+.about-us .cont-2 .women {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 32px;
+}
+.about-us .cont-2 .women p {
+  width: 370px;
+  color: white;
+  margin-bottom: 40px;
+}
+.about-us .cont-2 .crug {
+  background-color: #333333;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-top: 40px;
+}
+.about-us .cont-2 .crug h1 {
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  letter-spacing: 2.88px;
   position: absolute;
-  width: 400px;
-  height: 600px;
-  border: 2px solid black;
-  top: 0;
-  left: 0;
-  transition: 2s;
-  backface-visibility: hidden;
+  margin-left: 30px;
+  margin-top: 23px;
+  color: white;
 }
-.carti__carta_inside {
-  background-color: red;
+.about-us .cont-2 .kvadrat {
+  position: absolute;
+  margin-top: 470px;
+  margin-left: 400px;
+  display: flex;
+  width: 470px;
+  height: 200px;
+  background-color: #333333;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
 }
-.carti__carta_outside {
-  background-color: blue;
-  transform: rotateY(180deg);
+.about-us .cont-2 .kvadrat h1 {
+  width: 140px;
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0px;
+  color: white;
 }
-.carti:hover .carti__carta_inside {
-  transform: rotateY(-180deg);
+.about-us .cont-2 .kvadrat p {
+  width: 130px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0px;
 }
-.carti:hover .carti__carta_outside {
-  transform: rotateY(0deg);
+
+.footer {
+  background-color: #111111;
+  height: 360px;
+}
+
+.cont-3 {
+  width: min(100%, 1440px);
+  margin-inline: auto;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.chast1 p {
+  width: 290px;
+  color: #AAAAAA;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.chast2 h1 {
+  color: white;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+.chast2 .all {
+  display: flex;
+  width: 200px;
+}
+.chast2 .all p {
+  width: 150px;
+}
+.chast2 p {
+  margin: 0px;
+  width: 290px;
+  color: #AAAAAA;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%;
+}
+
+.button {
+  width: 210px;
+  height: 50px;
+  background-color: #E3B27D;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+.button p {
+  width: 130px;
+  color: white;
+}
+.button img {
+  width: 20px;
 }/*# sourceMappingURL=style.css.map */

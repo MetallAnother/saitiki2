@@ -1,8 +1,22 @@
-// @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap')
 
-@font-face
-    font-family: "Montserrat"
-    src : url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap')
+
+
+::-webkit-scrollbar 
+    width: 10px
+    background-color: #161515
+    
+
+::-webkit-scrollbar-thumb
+    width: 10px
+    background-color: #202020
+    border-radius: 50px
+
+
+html
+    scroll-behavior: smooth
+
 
 h1
     font-family: 'Poppins', sans-serif
@@ -29,7 +43,7 @@ p
 
 .cont-1
     margin-inline: auto
-        width: min(100%, 1440px)
+    width: min(100%, 1440px)
 
 .buttons
     width: min(100%, 818px)
@@ -83,6 +97,16 @@ p
     height: 35px
 
 
+.img-fon
+    width: 70px
+    position: absolute
+
+.img-fon-arahis
+    width: 80px
+    position: absolute
+    margin-left: 329px
+    margin-top: 725px
+
 
 
 .main-cont
@@ -94,11 +118,12 @@ p
     h1
         width: min(100%, 400px)
         color: white
-        font-size: 130px
+        font-size: 100px
         font-style: normal
-        font-weight: 500
+        font-weight: bold
         line-height: 135%
         margin-bottom: 20px
+        // letter-spacing: 20px
     
     p
         color: white
@@ -151,6 +176,7 @@ p
         background: #222222
         width: 670px
         height: 750px
+        display: flex
     
         .pupls-image
             width: 220px
@@ -179,31 +205,189 @@ p
             line-height: 140%
             margin: 0%
 
+        .fun-fact
+            display: flex
+            flex-direction: column
+            justify-content: space-evenly
+            margin-inline: auto
+            height: min(100%, 650px)
+            text-align: left
+
+            h1
+                font-family: 'Poppins', sans-serif
+                font-size: 50px
+                font-weight: 600
+                line-height: 220%
+                margin: 0px
+                height: 87px
+
+            p
+                font-family: 'Plus Jakarta Sans', sans-serif
+                font-size: 12px
+                font-weight: 600
+                line-height: 220%
+                margin: 0px
 
 
-.carti
-    position: relative
+.partners
+    margin-top: 100px
+    display: flex
+    margin-inline: auto
+    justify-content: space-between
+    width: min(100%, 1270px)
 
-    &__carta
-        position: absolute
-        width: 400px
-        height: 600px
-        border: 2px solid black
-        top: 0
-        left: 0
-        transition: 2s
-        backface-visibility: hidden
-        &_inside
-            background-color: red
-        &_outside
-            background-color: blue
-            transform: rotateY(180deg)
-    &:hover &__carta_inside
-        transform: rotateY(180deg)
-    &:hover &__carta_outside
-        transform: rotateY(0deg)
-    
+
+.about-us
+    margin: 0px
+    background: #181818
+    height: 990px
+
+    .cont-2
+        width: min(100%, 1440px)
+        height: min(100%, 804px)
+        margin-inline: auto
+        padding-top: 94px
+
+        .secation-title
+            color: white
+            p
+                color: #888
+                margin: 0px
+                font-size: 14px
+                font-style: normal
+                font-weight: 600
+                line-height: 160% 
+                letter-spacing: 2.1px
+
+            h1
+                margin: 0px
+                font-size: 40px
+                font-style: normal
+                font-weight: 600
+                line-height: 135%
+                width: min(100%,798px)
+
+        img
+            width: 700px
+
+        .women
+            display: flex
+            justify-content: space-around
+            margin-top: 32px
+            p
+                width: 370px
+                color: white
+                margin-bottom: 40px
+
+        .crug
+            background-color: #333333
+            width: 70px
+            height: 70px
+            border-radius: 50%
+            margin-top: 40px
             
+            h1
+                font-size: 19px
+                font-style: normal
+                font-weight: 700
+                line-height: 140%
+                letter-spacing: 2.88px
+                position: absolute
+                margin-left: 30px
+                margin-top: 23px
+                color: white
 
 
+        .kvadrat
+            position: absolute
+            margin-top: 470px
+            margin-left: 400px
+            display: flex
+            width: 470px
+            height: 200px
+            background-color: #333333
+            align-items: center
+            justify-content: space-around
+            text-align: center
 
+            h1
+                width: 140px
+                font-size: 50px
+                font-weight: 600
+                margin: 0px
+                color: white
+            
+            p
+                width: 130px
+                font-size: 16px
+                font-weight: 500
+                margin: 0px
+
+
+    
+
+.footer
+    background-color: #111111
+    height: 360px
+
+.cont-3
+    width: min(100%, 1440px)
+    margin-inline: auto
+
+
+.content
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding-top: 100px
+
+
+.chast1
+    p
+        width: 290px
+        color: #AAAAAA
+        font-size: 15px
+        font-style: normal
+        font-weight: 500
+        line-height: 140%
+.chast2
+
+    h1
+        color: white
+        font-size: 20px
+        font-style: normal
+        font-weight: 700
+        line-height: 140% 
+        text-transform: uppercase
+
+    .all
+        display: flex
+        width: 200px
+        
+        p
+            width: 150px
+
+    p
+        margin: 0px
+        width: 290px
+        color: #AAAAAA
+        font-size: 15px
+        font-style: normal
+        font-weight: 500
+        line-height: 140%
+
+.button
+    width: 210px
+    height: 50px
+    background-color: #E3B27D
+    display: flex
+    justify-content: space-around
+    align-items: center
+    color: white
+
+    p
+        width: 130px
+        color: white
+
+    img
+        width: 20px
